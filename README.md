@@ -3,6 +3,7 @@
 <head>
 	<title>Daniele Giunchi</title>
 
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 	<style type="text/css" media="screen"> @import url("css/plone.css");</style>
 	<style type="text/css" media="all">@import url("css/ploneCustom_alternative.css");</style>
@@ -552,7 +553,7 @@
 				<td>UCL</td>
 			</tr>
 		</table>
-		<!-- ################################################################ -->
+		
 		<!-- ################################################################ -->
 		<!-- <h2 id="bground">Background</h2>
 		<style>

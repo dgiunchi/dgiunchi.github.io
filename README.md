@@ -1,9 +1,6 @@
-
-<!DOCTYPE html>
-<head>
 	<title>Daniele Giunchi</title>
 
-        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 	<style type="text/css" media="screen"> @import url("css/plone.css");</style>
 	<style type="text/css" media="all">@import url("css/ploneCustom_alternative.css");</style>
@@ -677,4 +674,4 @@
 <!--	Daniele Giunchi<br>
 	<a href="mailto:d.giunchi@ucl.ac.uk">d.giunchi@ucl.ac.uk</a><br>
 </div>-->
-</html>
+

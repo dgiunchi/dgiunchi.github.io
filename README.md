@@ -1,9 +1,9 @@
 
 <!DOCTYPE html>
 <head>
-	<title>Alejandro Sztrajman</title>
+	<title>Daniele Giunchi</title>
 
-	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 	<style type="text/css" media="screen"> @import url("css/plone.css");</style>
 	<style type="text/css" media="all">@import url("css/ploneCustom_alternative.css");</style>
@@ -133,11 +133,11 @@
 	<div class="navbar">
 		<div class="navlinks">
 			<li><a href="#publications">Publications</a></li>
-			<li><a href="#patents">Patents</a></li>
-			<li><a href="#projects">Codes</a></li>
-			<li><a href="#talks">Talks</a></li>
+			<!--<li><a href="#patents">Patents</a></li>-->
+			<!--<li><a href="#projects">Projects</a></li>-->
+			<!--<li><a href="#talks">Talks</a></li>-->
+            <li><a href="#quantum">Quantum</a></li>
 			<li><a href="#teaching">Teaching</a></li>
-			<!--<li><a href="#bground">Background</a></li>-->
 		</div>
 	</div>
 	<div class="documentContent">
@@ -147,59 +147,45 @@
 				<td width="280px" valign="top">
 					<br><br>
 					<!--<img src="./img/portrait8b-circle-800-compressed-fs8.png" width="100%">-->
-					<img src="./img/portrait9-lr.png" width="100%">
+					<img src="./images/portrait.png" width="100%">
 				</td>
 				<td width="50px"></td>
 				<td align="justify" valign="top">
-					<h2>Alejandro Sztrajman</h2>
+					<h2>Daniele Giunchi</h2>
 					<table>
 						I'm a Research Associate in the
-						<a href="https://www.cl.cam.ac.uk/research/rainbow/">Rainbow Group</a>
+						<a href="http://vecg.cs.ucl.ac.uk/">Virtual Environment and Computer Graphics (VECG)</a>
 						at the
-						<a href="https://www.cam.ac.uk/">University of Cambridge</a>.
-						I hold a PhD in Computer Science
-						<!--in the <a href="http://www.cs.ucl.ac.uk/research/vr/">Virtual Environments and Computer Graphics Group</a>-->
-						from <a href="http://www.ucl.ac.uk/">University College London</a> (UCL), where I worked at the
-						<a href="http://reality.cs.ucl.ac.uk/home.html">Digital Reality Lab</a>,
+						<a href="https://www.ucl.ac.uk/">University College London</a>.
+						In 2021 I achieved my PhD in Computer Science
+						from <a href="http://www.ucl.ac.uk/">University College London</a> (UCL),
 						under the supervision of Profs.
-						<a href="http://reality.cs.ucl.ac.uk/weyrich.php">Tim Weyrich</a> and
-						<a href="http://www.homepages.ucl.ac.uk/~ucactri/">Tobias Ritschel</a>.
-						My research is in the intersection between computer graphics, machine learning and computer vision, combining methods from physically-based rendering, neural fields and meta-learning for the representation of photorealistic material appearance and scene illumination.
-						<!-- appearance acquisition, visual perception, material synthesis, efficient rendering -->
+						<a href="https://wp.cs.ucl.ac.uk/anthonysteed/">Anthony Steed</a> and
+						<a href="http://www0.cs.ucl.ac.uk/staff/N.Mitra/">Niloy Mitra</a>.
+						My research spans in computer graphics, human computer interaction, machine learning, computer vision, large language models, searching for new paradigm of individual interaction or collaborative interaction in order to improve user experience in VR/AR/XR.
 						My PhD project was funded by a
 						<a href="https://marie-sklodowska-curie-actions.ec.europa.eu/">Marie Curie Fellowship</a>,
 						granted by the European Commission.
-						<!--in the context of the
-						<a href="http://www.distro-itn.eu/">DISTRO ITN</a>.-->
-						During my PhD I also worked as research intern at
-						<a href="https://www.microsoft.com/applied-sciences">Microsoft</a> and
-						<a href="https://www.substance3d.com/">Adobe Substance 3D</a>.
-						<!--<a href="https://ec.europa.eu/research/mariecurieactions/">Marie Skłowdowska-Curie programme</a>.-->
-						Before joining UCL, I obtained a BSc in Physics from the
-						<a href="https://www.uba.ar/internacionales/index.php?lang=en">University of Buenos Aires</a>,
-						and I was a visiting student at the
-						<a href="https://www.cs.columbia.edu/cg/">Columbia Computer Graphics Group</a>.
-						<!--under the supervision of Profs.
-						<a href="https://www.dgp.toronto.edu/~eitan/">Eitan Grinspun</a>
-						and
-						<a href="https://cs.uwaterloo.ca/~c2batty/">Christopher Batty</a>.-->
-						<!--where I worked on physics-based numerical simulations.-->
+						During my PhD I worked as research intern at
+						<a href="https://www.microsoft.com/applied-sciences">Microsoft</a> and I was a visitor researcher at 
+						<a href="https://www.mpi-inf.mpg.de/home/">Max Plank Institute for Informatics</a>.
+						Before joining UCL, I obtained a BSc in Astronomy from the
+						<a href="https://www.unibo.it/en">University of Bologna</a>,
+						and I had a long experience in industry.
 						<br>
 						<br>
 						<br>
 						<div align="right" style="font-size:14px; font-weight:Italic;">
-							<b>Contact</b> <img src="./img/cam2.png" height="12px"/><br>
-							Room SE18<br>
-							Computer Laboratory<br>
-							William Gates Building<br>
-							15 JJ Thomson Avenue<br>
-							University of Cambridge, UK<br>
-							<!--Cambridge, CB3 0FD<br>-->
-<!-- 							United Kingdom<br> -->
+							<b>Contact</b> <img src="./icons/th.jpg" height="12px"/><br>
+							4th Floor<br>
+							Dept of Computer Science<br>
+							169 Euston Road<br>
+							University College London, UK<br>
 							<br>
-							<a id="hoverAlpha" href="mailto:alejandro.sztrajman@cl.cam.ac.uk"><img class="hoverZoom" width="35px" src="./img/mail.png"></a>
-							<a id="hoverAlpha" href="http://ar.linkedin.com/in/asztrajman"><img class="hoverZoom" width="35px" src="./img/linkedin.png"></a>
-							<a id="hoverAlpha" href="https://github.com/asztr"><i class="fab fa-github" style="font-size:35px; vertical-align:middle; color:#000000;"></i></a>
+							<a id="hoverAlpha" href="mailto:d.giunchi@ucl.ac.uk"><img class="hoverZoom" width="35px" src="./icons/mail.png"></a>
+							<a id="hoverAlpha" href="http://linkedin.com/dgiunchi"><img class="hoverZoom" width="35px" src="./icons/linkedin.png"></a>
+                            <a id="hoverAlpha" href="https://github.com/dgiunchi"><img class="hoverZoom" width="35px" src="./icons/github.png"></a>
+							<!--<a id="hoverAlpha" href="https://github.com/dgiunchi"><i class="fab fa-github" style="font-size:35px; vertical-align:middle; color:#000000;"></i></a>-->
 							<!--<a id="hoverAlpha" href=""><i class="ai ai-cv" style="padding:8px; border-radius:50%; font-size:18px; vertical-align:middle; background-color:#000000; color:#ffffff;"></i></a>-->
 						</div>
 					</table>
@@ -277,278 +263,78 @@
 		<table class="publications">
 			<tr>
 				<td>
-					<a href="https://arxiv.org/abs/2306.08943">
-						<img id="nobox" src="./publications/cnf2023/cnf2023-thumbnail.jpg">
+					<a href="linktothepdf">
+						<img id="nobox" src="linktoimage">
 					</a>
 				</td>
 				<td>
-					<b>Neural Fields with Hard Constraints of Arbitrary Differential Order</b><br>
-					Fangcheng Zhong, Kyle Fogarty, Param Hanji, Tianhao Wu, Alejandro Sztrajman, Andrew Spielberg, Andrea Tagliasacchi, Petra Bosilj, Cengiz Oztireli<br>
-					<span id="venue">NeurIPS (2023).</span><br>
-					<div id="keywords">Keywords: <keys>Neural Fields, Hypernetworks.</keys></div><br>
+					<b>title</b><br>
+					authors<br>
+					<span id="venue">where</span><br>
+					<div id="keywords">Keywords: <keys>key, key.</keys></div><br>
 					<div id="links">
-						<a href="https://zfc946.github.io/CNF.github.io/">Webpage</a>
-						<a href="https://arxiv.org/abs/2306.08943">arXiv</a>
-						<a href="https://arxiv.org/pdf/2306.08943.pdf">PDF</a>
+						<a href="linktowebpage">Webpage</a>
+						<a href="linktoarXiv">arXiv</a>
+						<a href="linktopdf">PDF</a>
 					</div>
 				</td>
 			</tr>
 
-			<tr>
-				<td>
-					<!--<a href="">-->
-						<img id="nobox" src="./publications/ihypertime2022/ihypertime-thumbnail2.jpg">
-					<!--</a>-->
-				</td>
-				<td>
-					<b>iHyperTime: Interpretable Time Series Generation with Implicit Neural Representations</b><br>
-					Elizabeth Fons, Alejandro Sztrajman, Yousef El-Laham, Andrea Coletta, Alexandros Iosifidis, Svitlana Vyetrenko<br>
-					<span id="venue">In Review (2023).</span><br>
-					<div id="keywords">Keywords: <keys>Time-series, Neural Fields, Generative Models, Interpretability, Hypernetworks.</keys></div><br>
-					<!--<div id="links">
-					</div>-->
-				</td>
-			</tr>
-
-			<tr>
-				<td>
-					<!--<a href="">-->
-						<img id="nobox" src="./publications/2023_hvei/hvei_thumbnail_crop.jpg">
-					<!--</a>-->
-				</td>
-				<td>
-					<b>Color Calibration Methods for OLED Displays</b><br>
-					Maliha Ashraf, Alejandro Sztrajman, Dounia Hammou, Rafał Mantiuk<br>
-					<span id="venue">In Review (2023).</span><br>
-					<div id="keywords">Keywords: <keys>Color Correction, Implicit Neural Representations.</keys></div><br>
-					<!--<div id="links">
-					</div>-->
-				</td>
-			</tr>
-
-			<tr>
-				<td>
-					<a href="https://openreview.net/forum?id=DZ2FaoMhWRb">
-						<img id="nobox" src="./publications/hypertime2022/hypertime-thumbnail2.jpg">
-					</a>
-				</td>
-				<td>
-					<b>HyperTime: Implicit Neural Representations for Time-Series</b><br>
-					Elizabeth Fons, Alejandro Sztrajman, Yousef El-Laham, Alexandros Iosifidis, Svitlana Vyetrenko<br>
-					<span id="venue">NeurIPS SyntheticData4ML (2022).</span><br>
-					<div id="keywords">Keywords: <keys>Time-series, Neural Fields, Signal Processing, Hypernetworks.</keys></div><br>
-					<div id="links">
-						<a href="https://openreview.net/forum?id=DZ2FaoMhWRb">OpenReview</a>
-						<a href="https://openreview.net/pdf?id=DZ2FaoMhWRb">PDF</a>
-						<!--<a href="https://arxiv.org/abs/2208.05836">arXiv</a>
-						<a href="https://arxiv.org/pdf/2208.05836">PDF</a>
-						<a href="./publications/hypertime2022/fons2022hypertime.bib">BibTeX</a>-->
-					</div>
-				</td>
-			</tr>
-
-			<tr>
-				<td>
-					<a href="./publications/nbrdf2021/nbrdf.html">
-						<img src="./publications/nbrdf2021/thumbnail.jpg">
-					</a>
-				</td>
-				<td>
-					<b>Neural BRDF Representation and Importance Sampling</b>
-					(<font style="font-variant: small-caps; color:red;">Wiley Top Cited Paper</font>)<br>
-					Alejandro Sztrajman, Gilles Rainer, Tobias Ritschel, Tim Weyrich<br>
-					<span id="venue">Computer Graphics Forum (CGF), 40(6), pp. 332-346, 2021 (Oral Presentation at EGSR 2022).</span><br>
-					<div id="keywords">Keywords: <keys>Material Appearance, Implicit Neural Representations, Meta-learning, Hypernetworks, Differentiable Rendering, Monte Carlo Sampling.</keys></div><br>
-					<div id="links">
-						<a href="./publications/nbrdf2021/nbrdf.html">Webpage</a>
-						<!--<a href="http://arxiv.org/abs/2102.05963">arXiv</a>-->
-						<a href="./publications/nbrdf2021/sztrajman2021nbrdf.pdf">PDF</a>
-						<a href="./publications/nbrdf2021/sztrajman2021nbrdf-lowres.pdf">PDF (lowres)</a>
-						<a href="./publications/nbrdf2021/nbrdf.html#nbrdf_webgl">WebGL Demo</a>
-						<a href="https://github.com/asztr/Neural-BRDF">Code</a>
-						<a href="./publications/nbrdf2021/sztrajman2021nbrdf.bib">BibTeX</a>
-						<!--<a href="http://doi.org/10.1111/cgf.14335">DOI</a>-->
-					</div>
-				</td>
-			</tr>
-
-			<tr>
-				<td>
-					<a href="./publications/ijcnn2022/ijcnn2022.html">
-						<img src="./publications/ijcnn2022/ijcnn2022-thumbnail2.jpg">
-					</a>
-				</td>
-				<td>
-					<b>Fast Blue Noise Generation via Unsupervised Learning</b><br>
-					*Daniele Giunchi, *Alejandro Sztrajman, Anthony Steed<br>
-					<span id="venue">International Joint Conference on Neural Networks (IJCNN), Padua, Italy, July 2022 (Oral Presentation).</span><br>
-					<div id="keywords">Keywords: <keys>Blue-Noise, Unsupervised Learning, Dithering, Monte Carlo Integration.</keys></div><br>
-					<div id="links">
-						<a href="./publications/ijcnn2022/ijcnn2022.html">Webpage</a>
-						<a href="./publications/ijcnn2022/ijcnn2022-preprint.pdf">PDF</a>
-						<a href="https://github.com/asztr/BlueNoise">Code</a>
-						<a href="./publications/ijcnn2022/giunchi2022bluenoise.bib">BibTeX</a>
-					</div>
-				</td>
-			</tr>
-
-			<tr>
-				<td>
-					<a href="https://discovery.ucl.ac.uk/id/eprint/10152596">
-						<!--<img id="nobox" src="./publications/phdthesis/phdthesis-thumbnail4-small.jpg">-->
-						<img id="nobox" src="./img/ucl-banner-black4-short.png">
-					</a>
-				</td>
-				<td>
-					<b>Machine Learning Applications in Appearance Modelling</b><br>
-					Alejandro Sztrajman<br>
-					<span id="venue">University College London, 2022 (PhD Thesis).</span><br>
-					<div id="keywords">
-						Reviewers: Profs.
-						<a href="https://scholar.google.co.uk/citations?hl=en&user=IRMX4-4AAAAJ">Lourdes Agapito</a> and
-						<a href="http://giga.cps.unizar.es/~diegog/">Diego Gutierrez</a>.
-					</div>
-					<br>
-					<div id="links">
-						<a href="https://discovery.ucl.ac.uk/id/eprint/10152596">UCL Repository</a>
-						<a href="https://discovery.ucl.ac.uk/id/eprint/10152596/7/asztrajman_PhD_thesis.pdf">PDF</a>
-					</div>
-				</td>
-			</tr>
-
-			<tr>
-				<td>
-					<a href="./publications/sketch2021/sketch2021.html">
-						<!--<img src="./publications/sketch2021/sketch-thumbnail.jpg">-->
-						<img src="./publications/sketch2021/imgs/teaser1-lr2.jpg">
-					</a>
-				</td>
-				<td>
-					<b>Mixing Modalities of 3D Sketching and Speech for Interactive Model Retrieval in Virtual Reality</b><br>
-					Daniele Giunchi, Alejandro Sztrajman, Stuart James, Anthony Steed<br>
-					<span id="venue">ACM International Conference on Interactive Media Experiences (IMX), New York, USA, Jun 2021 (Oral Presentation).</span><br>
-					<div id="keywords">Keywords: <keys>Virtual Reality, 3D Sketching, CNNs, Human-in-the-loop.</keys></div><br>
-					<div id="links">
-						<a href="./publications/sketch2021/sketch2021.html">Webpage</a>
-						<!--<a href="http://arxiv.org/abs/1808.06715">[arXiv]</a>-->
-						<a href="./publications/sketch2021/giunchi-etal_imx21.pdf">PDF</a>
-						<a href="./publications/sketch2021/giunchi-etal_imx21_lowres.pdf">PDF (lowres)</a>
-						<a href="./publications/sketch2021/giunchi2021sketch3d.bib">BibTeX</a>
-						<!--<a href="http://dl.acm.org/doi/10.1145/3452918.3458806">[DOI]</a>-->
-					</div>
-				</td>
-			</tr>
-
-			<tr>
-				<td>
-					<a href="./publications/3dv2020/3dv2020.html">
-						<img id="nobox" src="./publications/3dv2020/img/3dv-thumbnail.jpg">
-					</a>
-				</td>
-				<td>
-					<b>High-Dynamic-Range Lighting Estimation from Face Portraits</b><br>
-					Alejandro Sztrajman, Alexandros Neophytou, Tim Weyrich, Eric Sommerlade<br>
-					<span id="venue">International Conference on 3D Vision (3DV), Fukoka, Japan, Nov 2020 (Oral Presentation).</span><br>
-					<div id="keywords">Keywords: <keys>HDR Lighting, CNNs, Inverse Rendering, Light Estimation.</keys></div><br>
-					<div id="links">
-						<a href="./publications/3dv2020/3dv2020.html">Webpage</a>
-						<a href="./publications/3dv2020/3dv-paper.pdf">PDF</a>
-						<a href="./publications/3dv2020/3dv2020.bib">BibTeX</a>
-						<!--<a href="http://reality.cs.ucl.ac.uk/projects/envmaps/sztrajman2020hdr.html">Webpage</a>
-						<a href="http://reality.cs.ucl.ac.uk/projects/envmaps/sztrajman2020hdr.pdf">PDF</a>
-						<a href="http://reality.cs.ucl.ac.uk/projects/envmaps/sztrajman2020hdr.bib">BibTeX</a>-->
-						<!--<a href="http://dx.doi.org/10.1109/3DV50981.2020.00045">DOI</a>-->
-					</div>
-				</td>
-			</tr>
-
-			<tr>
-				<td>
-					<a href="http://reality.cs.ucl.ac.uk/projects/reflectance-remapping/sztrajman2019image-based.html">
-						<img id="nobox" src="./publications/jcgt2019/jcgt2019_thumbnail_20pct.jpeg">
-					</a>
-				</td>
-				<td>
-					<b>Image-based remapping of spatially-varying material appearance</b><br>
-					Alejandro Sztrajman, Jaroslav Krivanek, Alexander Wilkie, Tim Weyrich<br>
-					<span id="venue">Journal of Computer Graphics Techniques (JCGT), 8(4), pp. 1-30, 2019.</span><br>
-					<div id="keywords">Keywords: <keys>Material Appearance, SVBRDF, Non-linear Optimization, Neural Networks.</keys></div><br>
-					<div id="links">
-						<a href="http://reality.cs.ucl.ac.uk/projects/reflectance-remapping/sztrajman2019image-based.html">Webpage</a>
-						<a href="http://jcgt.org/published/0008/04/01/paper.pdf">PDF</a>
-						<a href="http://jcgt.org/published/0008/04/01/paper-lowres.pdf">PDF (lowres)</a>
-						<a href="http://jcgt.org/published/0008/04/01/bibtex.bib">BibTeX</a>
-						<a href="https://github.com/asztr/SVBRDF-Remapping">Code</a>
-						<!--<a href="http://jcgt.org/published/0008/04/01/supplemental.zip">Code</a>-->
-						<!--<a href="http://arxiv.org/abs/1808.06715">[arXiv]</a>-->
-						<!--<a href="http://reality.cs.ucl.ac.uk/projects/reflectance-remapping/sztrajman2019image-based.pdf">PDF</a>
-						<a href="http://reality.cs.ucl.ac.uk/projects/reflectance-remapping/sztrajman2019image-based-lowres.pdf">PDF (lowres)</a>
-						<a href="http://reality.cs.ucl.ac.uk/projects/reflectance-remapping/sztrajman2019image-based.bib">BibTeX</a>-->
-					</div>
-				</td>
-			</tr>
-
-			<tr>
-				<td>
-					<a href="http://reality.cs.ucl.ac.uk/projects/reflectance-remapping/sztrajman17image-based.html">
-						<img id="nobox" src="./publications/mam2017/mam2017_thumbnail.jpg">
-					</a>
-				</td>
-				<td>
-					<b>Image-based remapping of material appearance</b><br>
-					Alejandro Sztrajman, Jaroslav Krivanek, Alexander Wilkie, Tim Weyrich<br>
-					<span id="venue">Eurographics Workshop on Material Appearance Modeling (MAM), Helsinki, Finland, Jun 2017 (Oral Presentation).</span><br>
-					<div id="keywords">Keywords: <keys>Material Appearance, BRDF, Non-linear Optimization.</keys></div><br>
-					<div id="links">
-						<a href="http://reality.cs.ucl.ac.uk/projects/reflectance-remapping/sztrajman17image-based.html">Webpage</a>
-						<a href="https://discovery.ucl.ac.uk/id/eprint/10038784/1/sztrajman17image-based_egdiglib.pdf">PDF</a>
-						<a href="./publications/mam2017/mam2017.bib">BibTeX</a>
-						<!--<a href="http://reality.cs.ucl.ac.uk/projects/reflectance-remapping/sztrajman17image-based.pdf">PDF</a>-->
-						<!--<a href="http://reality.cs.ucl.ac.uk/projects/reflectance-remapping/sztrajman17image-based.bib">BibTeX</a>-->
-					</div>
-				</td>
-			</tr>
+			
 		</table>
 
 		<!-- ################################################################ -->
-		<h2 id="patents">Patents</h2>
+		<!--<h2 id="patents">Patents</h2>
 		<table class="publications">
 			<tr>
 				<td style="width:220px;">
-					<!--<a href="">-->
-						<img style="width:150px;" src="./publications/ihypertime2022/ihypertime_nf_1stpage.jpg">
-					<!--</a>-->
+						<img style="width:150px;" src=".image.jpg">
 				</td>
 				<td>
-					<b>Generating Interpretable Time Series By Meta-Learning With Implicit Neural Representation</b><br>
-					Elizabeth Fons, Alejandro Sztrajman, Yousef El-Laham, Alexandros Iosifidis, Svitlana Vyetrenko<br>
-					<span id="venue">US Patent (Pending, 2022)</span><br>
-					<!--<div id="links">
-					</div>-->
+					<b>Description</span><br>
 				</td>
 			</tr>
 
 			<tr>
 				<td style="width:220px;">
-					<a href="https://scholar.google.com/scholar?oi=bibs&cluster=5095571253552234732&btnI=1&hl=en">
-						<img style="width:150px;" src="./publications/3dv2020/img/3dv-patent-cover.png">
+					<a href="linktopatent">
+						<img style="width:150px;" src="image">
 					</a>
 				</td>
 				<td>
-					<b>Estimating Illumination in an Environment Based on an Image of a Reference Object</b><br>
-					Alexandros Neophytou, Eric Sommerlade, Alejandro Sztrajman, Sunando Sengupta<br>
-					<span id="venue">US Patent 0116549 A1 (2022).</span><br>
+					Description
+					<span id="venue">patent number</span><br>
 					<div id="links">
-						<!--<a href="https://scholar.google.com/scholar?oi=bibs&cluster=5095571253552234732&btnI=1&hl=en">Page</a>-->
-						<a href="https://patents.google.com/patent/US11330196B2/en">Page</a>
-						<a href="https://www.freepatentsonline.com/20220116549.pdf">PDF</a>
+						<a href="link1">Page</a>
+						<a href="link2">PDF</a>
 					</div>
 				</td>
 			</tr>
+		</table>-->
+        
+        
+        <h2 id="quantum">Quantum Information</h2>
+		<table class="publications">
+			<tr>
+                <td>
+                    <img id="nobox" src="./images/0000_quantum_qcgh.png">
+                </td>
+                <td>
+                    <b>Towards Quantum Computer Holography</b><br>
+                    Thesis for the II level Master of Optics and Quantum Information from La Sapienza University (Rome).
+                    <br>
+                    <a href="./store/TowardsQuantumComputerGeneratedHolography.pdf">Thesis</a>
+                    <a href="./store/PresentationSBAIThesis2023DG.ppsx">Slides of the presentation</a>
+                    <!--<div id="tags">
+                        <li>keyword1</li>
+                        <li>keyword1</li>
+                    </div>-->
+                </td>
+            </tr>
 		</table>
 
 		<!-- ################################################################ -->
-		<h2 id="projects">Other Codes</h2>
+		<!--<h2 id="projects">Projects</h2>-->
 		<style>
 			table.projects {
 				margin-left: 40px;
@@ -614,190 +400,71 @@
 			}
 		</style>
 		<div style="display:inline-block;">
-		<table class="projects" style="width:46%; float:left;">
+		<!--<table class="projects" style="width:46%; float:left;">
 			<tr>
 				<td>
-					<img id="nobox" src="./projects/hmm/hmm1.jpg">
+					<img id="nobox" src=".image">
 				</td>
 				<td>
-					<b>Feature Saliency HMM</b><br>
-					Implementation of the Feature Saliency HMM algorithm, for feature selection on Hidden Markov Models.
+					<b>title</b><br>
+					description
 					<br>
-					<a href="https://github.com/elifons/FeatureSaliencyHMM">[Code]</a>
-					<!--<a href="./projects/hmm/hmm.zip">[Code]</a>-->
+					<a href="...">[Code]</a>
 					<div id="tags">
-						<li>Python</li>
-						<li>Hidden Markov Model</li>
+						<li>keyword1</li>
+						<li>keyword1</li>
 					</div>
 				</td>
 			</tr>
-			<!--<tr>
-				<td>
-					<video id="nobox" muted loop preload="auto" onmouseover="this.play()" onmouseout="this.pause()">
-						<source src="./projects/remap/remap_thumbnail.mp4" type="video/mp4;">
-					</video>
-				</td>
-				<td>
-					<b>Appearance remapping with SVR</b><br>
-					Application of Support Vector Regression to the translation between different BRDF models in renderers.<br>
-					<!- -<a href="./projects/remap/.mp4">[Video]</a>- ->
-					<a href="https://github.com/asztr/svr-brdf">[Code]</a>
-					<!- -<a href="./projects/remap/svr-brdf.zip">[Code]</a>- ->
-					<div id="tags">
-						<li>Python</li>
-						<li>BRDF</li>
-						<li>Physics-based rendering</li>
-					</div>
-				</td>
-			</tr>-->
 			<tr>
 				<td>
-					<img src="./projects/shirley/shirley.jpg">
+					<img id="nobox" src=".image">
 				</td>
 				<td>
-					<b>Path tracing</b><br>
-					A path tracer with support for environment map illumination.
+					<b>title</b><br>
+					description
 					<br>
-					<!--<a href="./projects/shirley/shirley-based-raytracer.zip">[Code]</a>-->
-					<a href="https://github.com/asztr/shirley-based-raytracer">[Code]</a>
+					<a href="...">[Code]</a>
 					<div id="tags">
-						<li>C++</li>
-						<li>Global Illumination</li>
+						<li>keyword1</li>
+						<li>keyword1</li>
 					</div>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<a href="./projects/lbe2d/lbe2d-reel2.mp4">
-						<video muted loop preload="auto" onmouseover="this.play()" onmouseout="this.pause()">
-							<source src="./projects/lbe2d/lbe2d_thumbnail2.mp4#t=0.01" type="video/mp4;">
-						</video>
-					</a>
-				</td>
-				<td>
-					<b>2D Lattice-Boltzmann Simulation</b><br>
-					Interactive simulation of incompressible viscous fluid with Lattice-Boltzmann D2Q9.<br>
-					<a href="https://github.com/asztr/lbe2d">[Code]</a>
-					<!--<a href="./projects/lbe2d/lbe2d.zip">[Code]</a>-->
-					<a href="./projects/lbe2d/lbe2d-reel2.mp4">[Video]</a>
-					<div id="tags">
-						<li>C++</li>
-						<li>Qt</li>
-						<li>Physics-based Animation</li>
-					</div>
-				</td>
-			</tr>
-			<!--<tr>
-				<td>
-					<a href="./projects/elastic-mesh/elastic-mesh-reel2.mp4">
-						<video id="nobox" muted loop preload="auto" onmouseover="this.play()" onmouseout="this.pause()">
-							<source src="./projects/elastic-mesh/mesh_thumbnail.mp4#t=0.01" type="video/mp4;">
-							<img src="./projects/elastic-mesh/elastic-mesh.png">
-						</video>
-					</a>
-				</td>
-				<td>
-					<b>2D Elastic mesh</b><br>
-					Real-time simulation of a bi-dimensional elastic mesh.<br>
-					<a href="./projects/elastic-mesh/elastic-mesh-reel2.mp4">[Video]</a>
-					<div id="tags">
-						<li>C++</li>
-						<li>OpenGL</li>
-						<li>Physics-based Animation</li>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<img src="./projects/aslam/aslam_thumbnail2.jpg">
-				</td>
-				<td>
-					<b>High-order extrapolation</b><br>
-					A differential equation approach to high-order extrapolation.
-					<br>
-					<a href="./projects/aslam/aslam.pdf">[Report]</a>
 				</td>
 			</tr>
 		</table>-->
-		<table class="projects" style="width:46%; float:right;">
+		<!--<table class="projects" style="width:46%; float:left;">
 			<tr>
 				<td>
-					<img id="nobox" src="./projects/utia-brdf/utia_spheres3.jpg">
+					<img id="nobox" src="image">
 				</td>
 				<td>
-					<b>UTIA BRDF Reader</b><br>
-					Script to read measured BRDF data from the <a href="http://btf.utia.cas.cz/?brdf_dat_dwn">UTIA BRDF database</a>.
+					<b>title</b><br>
+					description
 					<br>
-					<a href="https://github.com/asztr/UTIA-brdf">[Code]</a>
+					<a href="...">[Code]</a>
 					<div id="tags">
-						<li>Python</li>
-						<li>BRDF</li>
+						<li>keyword1</li>
+						<li>keyword1</li>
 					</div>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<a href="./projects/phong/phong_reel2.mp4">
-						<video muted loop preload="auto" onmouseover="this.play()" onmouseout="this.pause()">
-							<source src="./projects/phong/phong_thumbnail.mp4#t=1.1" type="video/mp4;">
-						</video>
-					</a>
+					<img id="nobox" src="image">
 				</td>
 				<td>
-					<b>WebGL 3D Engine</b><br>
-					An interactive WebGL 3D engine with phong shading and support for Bezier surfaces.<br>
-					<a href="./projects/phong/phong_reel2.mp4">[Video]</a>
-					<a href="https://github.com/asztr/webgl-3Dengine">[Code]</a>
-					<!--<a href="./projects/phong/webgl-3Dengine.zip">[Code]</a>-->
-					<a href="./projects/phong/engine/index.html">[Try it!]</a>
-					<div id="tags">
-						<li>Javascript</li>
-						<li>WebGL</li>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<a href="./projects/flip2d/flip2d_reel2.mp4">
-						<video muted loop preload="auto" onmouseover="this.play()" onmouseout="this.pause()">
-							<source src="./projects/flip2d/flip2d_thumbnail.mp4#t=0.01" type="video/mp4;">
-						</video>
-					</a>
-				</td>
-				<td>
-					<b>2D FLIP Simulation</b><br>
-					Fluid Implicit Particle (FLIP) simulation of a 2D incompressible inviscid fluid.
+					<b>title</b><br>
+					description
 					<br>
-					<!--<a href="./projects/flip2d/flip2d.pdf">[Report]</a>-->
-					<a href="https://github.com/asztr/flip2d">[Code]</a>
-					<!--<a href="./projects/flip2d/flip2d.zip">[Code]</a>-->
-					<a href="./projects/flip2d/flip2d.mp4">[Video]</a>
+					<a href="...">[Code]</a>
 					<div id="tags">
-						<li>C++</li>
-						<li>Qt</li>
-						<li>Physics-based Animation</li>
+						<li>keyword1</li>
+						<li>keyword1</li>
 					</div>
 				</td>
 			</tr>
-		</table>
+		</table>-->
 		</div>
-		<!--<td>
-			<a href="./projects/moldyn/moldyn.mp4">
-				<video muted loop preload="auto" onmouseover="this.play()" onmouseout="this.pause()">
-					<source src="./projects/moldyn/moldyn_thumbnail.mp4#t=0.01" type="video/mp4;">
-				</video>
-			</a>
-		</td>
-		<td>
-			<b>Molecular dynamics</b><br>
-			Lagrangian simulation of a fluid at a molecular level. Integration is done with velocity-Verlet,
-			Lennard-Jones interactions, and periodic boundary conditions (C++/VMD).
-			<br>
-			<a href="./projects/moldyn/moldyn-report.pdf">[Report (Spanish)]</a>
-			<a href="./projects/moldyn/moldyn.mp4">[Video]</a>
-		</td>-->
-		<!-- ################################################################ -->
-		<!--<h2 id="articles">Short Articles</h2>-->
 		<style>
 			table.blog {
 				margin-left:40px;
@@ -818,134 +485,7 @@
 				border-bottom: solid 1px;
 			}
 		</style>
-		<!--<table class="blog">
-			<col width="60px">
-			<col width="800px" align="left">
-
-			<tr>
-				<td><img src="./img/net.svg" width="90%"></td>
-				<td>
-					<a href="./blog/rnvp/rnvp.html">Generative Models &mdash; Real NVP Networks</a><br>
-					<span>June 2021</span>
-				</td>
-			</tr>-->
-
-			<!--<tr>
-				<td><img src="./img/stats_thumb.png" width="100%"></td>
-				<td>
-					<a href="">Statistical Analysis &mdash; A Guide to Evaluate Machine Learning Classifiers</a><br>
-					<span>July 2021</span>
-				</td>
-			</tr>-->
-
-			<!--<tr>
-				<td><img src="./img/stats_thumb.png" width="100%"></td>
-				<td>
-					<a href="./blog/stats/friedman.html">Statistical Analysis &mdash; Friedman Test</a><br>
-					<span>July 2021</span>
-				</td>
-			</tr>
-		</table>-->
-		<!-- ################################################################ -->
-		<!--<h2 id="talks">Talks</h2>
-		<style>
-			table.talks {
-				margin-left:40px;
-				border-spacing: 10px 10px;
-			}
-
-			table.talks tr:hover {
-				background-color: #fafafa;
-			}
-			
-			table.talks span {
-				color:#555555;
-				font-size:14px;
-				font-weight:100;
-			}
-
-			table.talks div#tags {
-				cursor: default;
-				margin-top: 5px;
-			}
-
-			table.talks div#tags li {
-				display: inline-block;
-				border: solid 1px #8cacbb; /*#ea853a;*/
-				border-radius: 5px;
-				color: #8cacbb; /*#ea853a;*/
-				font-size: 0.7em;
-				text-shadow: 0 1px 0 #fff;
-				padding: calc(var(--spacing) / 2) var(--spacing);
-				margin: 0 var(--spacing) var(--spacing) 0;
-				white-space: nowrap;
-				cursor: default;
-			}
-		</style>
-		<table class="talks">
-			<col width="60px">
-			<col width="800px" align="left">
-
-			<tr>
-				<td><img src="./publications/3dv2020/img/3dv-logo2.png" width="100%"></td>
-				<td>
-					<b>High-Dynamic-Range Lighting Estimation from Face Portraits</b><br>
-					<span id="venue">Virtual, 27 Nov 2020 | International Conference on 3D Vision.</span><br>
-					<div id="links">
-						<a href="./publications/3dv2020/3dv-long+notes.pdf">Slides</a>
-						<a href="./publications/3dv2020/3dv2020.html#short">Short Presentation</a>
-						<a href="./publications/3dv2020/3dv2020.html#long">Long Presentation</a>
-						<a href="./publications/3dv2020/3dv2020.html#poster">Poster</a>
-					</div>
-				</td>
-			</tr>
-
-			<tr>
-				<td><img src="./talks/microsoft/microsoft.png" width="100%"></td>
-				<td>
-					<b>CNN-based Face Relighting</b><br>
-					<span id="venue">Microsoft, Reading, UK. 12 Mar 2020.</span><br>
-					<div id="tags">
-						<li><s>Slides</s></li>
-					</div>
-				</td>
-			</tr>
-
-			<tr>
-				<td><img src="./talks/eth/eth.png" width="100%"></td>
-				<td>
-					<b>Capture and Editing of Material Appearance</b><br>
-					<span id="venue">ETH, Zurich, Switzerland. 5 Feb 2018 | DISTRO-ITN Annual Reunion.</span><br>
-					<div id="links">
-						<a href="./talks/eth/presentation_ethz_2018.pdf">Slides</a>
-					</div>
-				</td>
-			</tr>
-
-			<tr>
-				<td><img src="./talks/ist/ist.svg" width="100%"></td>
-				<td>
-					<b>Introduction to Convolutional Neural Networks</b><br>
-					<span id="venue">IST, Vienna, Austria. 14 Nov 2017 | As part of the Deep Learning Workshop organized by DISTRO-ITN.</span><br>
-					<div id="links">
-						<a href="./talks/ist/ist_presentation.pdf">Slides</a>
-						<a href="https://github.com/asztr/WienTrainingWeek">Course Materials</a>
-					</div>
-				</td>
-			</tr>
-
-			<tr>
-				<td><img src="./publications/mam2017/eg-logo.png" width="100%"></td>
-				<td>
-					<b>Image-based Remapping of Material Appearance</b><br>
-					<span id="venue">Helsinki, Finland, 18 Jun 2017 | Eurographics Workshop on Material Appearance Modelling.</span><br>
-					<div id="links">
-						<a href="./publications/mam2017/mam2017_presentation.pdf">Slides</a>
-					</div>
-				</td>
-			</tr>
-
-		</table>-->
+		
 		<!-- ################################################################ -->
 		<h2 id="teaching">Teaching</h2>
 		<style>
@@ -964,48 +504,56 @@
 			<col width="auto">
 			<col width="140">
 			<col align="right" width="auto">
-			<!--<tr>
-				<td><b>2019</b></td>
-				<td>Introduction to Virtual Reality (MOOC)</td>
+            <tr>
+				<td><b>2023</b></td>
+				<td>Computer Graphics</td>
 				<td></td>
-				<td>UCL/IDEALondon (<i>In development</i>)</td>
-			</tr>-->
+				<td>UCL</td>
+			</tr>
+            <tr>
+				<td><b>2022</b></td>
+				<td>Image processing</td>
+				<td></td>
+				<td>UCL</td>
+			</tr>
 			<tr>
-				<td><b>2019</b></td>
-				<!--<td><a href="http://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs">Advanced Deep Learning and Reinforcement Learning</a></td>-->
-				<td>
-					<a href="https://www.ucl.ac.uk/module-catalogue/modules/reinforcement-learning/COMP0089">Advanced Deep Learning and Reinforcement Learning</a>
-					<!--<a href="http://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs"> <img src="./img/youtube-logo.png" height="20px"/></a>-->
-				</td>
-				<!--<td><a href="http://www.cs.ucl.ac.uk/1819/A7P/T2/COMP0089_Advanced_Deep_Learning_and_Reinforcement_Learning/"></a></td>-->
+				<td><b>2020,2021,2022</b></td>
+				<td>Virtual Environments</td>
 				<td></td>
 				<td>DeepMind/UCL</td>
 			</tr>
 			<tr>
-				<td><b>2018</b></td>
-				<td><a href="http://web4.cs.ucl.ac.uk/teaching/GV16/">Research Methods and Reading</a></td>
+				<td><b>2019</b></td>
+				<td>Advanced Deep Learning and Reinforcement Learning</td>
+				<td></td>
+				<td>DeepMind/UCL</td>
+			</tr>
+			<tr>
+				<td><b>2019</b></td>
+				<td>Machine Vision</td>
+				<td></td>
+				<td>UCL</td>
+			</tr>
+			<tr>
+				<td><b>2018, 2020</b></td>
+				<td>System Engineering</td>
 				<td></td>
 				<td>UCL</td>
 			</tr>
 			<tr>
 				<td><b>2017</b></td>
-				<td><a href="http://ucl-cs-grad.github.io/scipython/">Scientific Programming in Python</a> <img src="./img/python-logo.png" height="16px"/></td>
+				<td>Computational Photography</td>
 				<td></td>
 				<td>UCL</td>
 			</tr>
 			<tr>
-				<td><b>2016</b></td>
-				<td><a href="http://www.cs.ucl.ac.uk/current_students/syllabus/undergrad/105p_robotics_programming/">Robotics Programming</a></td>
-				<td></td>
-				<td>UCL</td>
-			</tr>
-			<tr>
-				<td><b>2016</b></td>
-				<td><a href="http://www.cs.ucl.ac.uk/students/syllabus/undergrad/101p_principles_of_programming/">Principles of Programming</a></td>
+				<td><b>2017</b></td>
+				<td>Robotic Programming</td>
 				<td></td>
 				<td>UCL</td>
 			</tr>
 		</table>
+		
 		<!-- ################################################################ -->
 		<!-- <h2 id="bground">Background</h2>
 		<style>
@@ -1119,14 +667,14 @@
 	<br><br><br><br>
 	<div class="footer">
 		<div class="footer-text">
-			Alejandro Sztrajman<br>
-			<a href="a.sztrajman@ucl.ac.uk">a.sztrajman@ucl.ac.uk</a>
+			Daniele Giunchi<br>
+			<a href="d.giunchi@ucl.ac.uk">d.giunchi@ucl.ac.uk</a>
 		</div>
 	</div>
 </body>
 <!-- <div id="portal-footer" style="margin-top:60px; margin-bottom:0px; padding-bottom:10px;"> -->
 <!-- <div style="margin-top:60px; padding-top:10px; border-top:solid 1px #e3e3e3; text-align:right; font-size:10px;"> -->
-<!--	Alejandro Sztrajman<br>
-	<a href="mailto:a.sztrajman@ucl.ac.uk">a.sztrajman@ucl.ac.uk</a><br>
+<!--	Daniele Giunchi<br>
+	<a href="mailto:d.giunchi@ucl.ac.uk">d.giunchi@ucl.ac.uk</a><br>
 </div>-->
 </html>

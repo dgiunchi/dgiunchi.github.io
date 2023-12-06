@@ -503,48 +503,56 @@
 			<col width="auto">
 			<col width="140">
 			<col align="right" width="auto">
-			<!--<tr>
-				<td><b>2019</b></td>
-				<td>Introduction to Virtual Reality (MOOC)</td>
+            <tr>
+				<td><b>2023</b></td>
+				<td>Computer Graphics</td>
 				<td></td>
-				<td>UCL/IDEALondon (<i>In development</i>)</td>
-			</tr>-->
+				<td>UCL</td>
+			</tr>
+            <tr>
+				<td><b>2022</b></td>
+				<td>Image processing</td>
+				<td></td>
+				<td>UCL</td>
+			</tr>
 			<tr>
-				<td><b>2019</b></td>
-				<!--<td><a href="http://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs">Advanced Deep Learning and Reinforcement Learning</a></td>-->
-				<td>
-					<a href="https://www.ucl.ac.uk/module-catalogue/modules/reinforcement-learning/COMP0089">Advanced Deep Learning and Reinforcement Learning</a>
-					<!--<a href="http://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs"> <img src="./img/youtube-logo.png" height="20px"/></a>-->
-				</td>
-				<!--<td><a href="http://www.cs.ucl.ac.uk/1819/A7P/T2/COMP0089_Advanced_Deep_Learning_and_Reinforcement_Learning/"></a></td>-->
+				<td><b>2020,2021,2022</b></td>
+				<td>Virtual Environments</td>
 				<td></td>
 				<td>DeepMind/UCL</td>
 			</tr>
 			<tr>
-				<td><b>2018</b></td>
-				<td><a href="http://web4.cs.ucl.ac.uk/teaching/GV16/">Research Methods and Reading</a></td>
+				<td><b>2019</b></td>
+				<td>Advanced Deep Learning and Reinforcement Learning</td>
+				<td></td>
+				<td>DeepMind/UCL</td>
+			</tr>
+			<tr>
+				<td><b>2019</b></td>
+				<td>Machine Vision</td>
+				<td></td>
+				<td>UCL</td>
+			</tr>
+			<tr>
+				<td><b>2018, 2020</b></td>
+				<td>System Engineering</td>
 				<td></td>
 				<td>UCL</td>
 			</tr>
 			<tr>
 				<td><b>2017</b></td>
-				<td><a href="http://ucl-cs-grad.github.io/scipython/">Scientific Programming in Python</a> <img src="./img/python-logo.png" height="16px"/></td>
+				<td>Computational Photography</td>
 				<td></td>
 				<td>UCL</td>
 			</tr>
 			<tr>
-				<td><b>2016</b></td>
-				<td><a href="http://www.cs.ucl.ac.uk/current_students/syllabus/undergrad/105p_robotics_programming/">Robotics Programming</a></td>
-				<td></td>
-				<td>UCL</td>
-			</tr>
-			<tr>
-				<td><b>2016</b></td>
-				<td><a href="http://www.cs.ucl.ac.uk/students/syllabus/undergrad/101p_principles_of_programming/">Principles of Programming</a></td>
+				<td><b>2017</b></td>
+				<td>Robotic Programming</td>
 				<td></td>
 				<td>UCL</td>
 			</tr>
 		</table>
+		<!-- ################################################################ -->
 		<!-- ################################################################ -->
 		<!-- <h2 id="bground">Background</h2>
 		<style>

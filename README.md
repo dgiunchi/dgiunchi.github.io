@@ -323,7 +323,7 @@
                     <b>Towards Quantum Computer Holography</b><br>
                     Thesis for the II level Master of Optics and Quantum Information from La Sapienza University (Rome).
                     <br>
-                    <a href="./store/TowardsQuantumComputerGeneratedHolography.pdf">Thesis</a>
+                    <a href="./store/TowardsQuantumComputerGeneratedHolography.pdf">Thesis</a><br>
                     <a href="./store/PresentationSBAIThesis2023DG.ppsx">Slides of the presentation</a>
                     <!--<div id="tags">
                         <li>keyword1</li>

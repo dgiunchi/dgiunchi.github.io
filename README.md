@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<head>
 	<title>Daniele Giunchi</title>
 
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
@@ -674,4 +676,4 @@
 <!--	Daniele Giunchi<br>
 	<a href="mailto:d.giunchi@ucl.ac.uk">d.giunchi@ucl.ac.uk</a><br>
 </div>-->
-
+</html>

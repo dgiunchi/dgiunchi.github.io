@@ -1,0 +1,8 @@
+# Official Astro documentation. No credentials or global permission changes.
+# Project configuration is loaded by Codex for trusted projects.
+[mcp_servers.astro_docs]
+url = "https://mcp.docs.astro.build/mcp"
+enabled = true
+enabled_tools = ["search_astro_docs"]
+startup_timeout_sec = 30
+tool_timeout_sec = 60

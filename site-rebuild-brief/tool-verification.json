@@ -1,0 +1,40 @@
+{
+  "checked_at": "2026-09-13T11:31:42.794298+00:00",
+  "astro_mcp": {
+    "endpoint": "https://mcp.docs.astro.build/mcp",
+    "project_config": ".codex/config.toml",
+    "codex_config_recognised": true,
+    "server_name": "Astro Docs server",
+    "server_version": "1.0.0",
+    "protocol": "2025-03-26",
+    "tool": "search_astro_docs",
+    "test_query": "static content collections GitHub Pages deployment",
+    "search_text_characters": 27971,
+    "status": "handshake_tool_discovery_and_search_passed",
+    "client": "tools/check_astro_mcp.py",
+    "note": "Independent protocol check; current conversation tool-catalog refresh was not tested."
+  },
+  "github": {
+    "connection": "existing app integration",
+    "request": "repository metadata",
+    "repository": "dgiunchi/dgiunchi.github.io",
+    "default_branch": "main",
+    "status": "read_verified"
+  },
+  "cli_anything": {
+    "builder_skill": "already installed",
+    "installed_harnesses_found_in_active_python": 0,
+    "installed_harness_executables_found_on_path": 0,
+    "note": "Inventory covers the active Python environment and PATH, not every environment on the machine."
+  },
+  "project_skills": {
+    "validator": "skill-creator/scripts/quick_validate.py",
+    "passed": [
+      "giunchi-site-design",
+      "giunchi-publication-sync",
+      "giunchi-site-tooling"
+    ]
+  },
+  "production_site_rebuilt": false,
+  "publication_scheduler_provisioned": false
+}

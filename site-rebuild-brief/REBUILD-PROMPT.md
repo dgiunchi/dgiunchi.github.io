@@ -32,6 +32,8 @@ The existing site also records PhD supervision by Anthony Steed and Niloy Mitra,
 
 Use official current sources for current employment and contact details, publisher records for final publication metadata, and the existing site for historical material and local assets. Document material conflicts rather than silently inventing a resolution. Write concise, natural English in the first person where appropriate.
 
+Owner-confirmed teaching update (13 September 2026): I currently teach Intelligent Interactive Systems and Visualization at the University of Birmingham. Put this first in the teaching section, ahead of dated UCL history. Preserve the supplied wording; do not infer a start year, module code, leadership role, or course description.
+
 ## 2. Visual direction
 
 Create an elegant research portfolio with the character of an interactive graphics researcher. Aim for excellent typography, generous whitespace, strong hierarchy, and engaging research imagery. Make the experience warm and personal while retaining academic credibility.
@@ -41,6 +43,8 @@ Use the supplied pixel-art portrait as the main portrait. It is available at `si
 Connect the visual language to my studies through subtle spatial grids, points, optical patterns, or depth cues. Treat astronomy and quantum optics as part of my intellectual background while keeping immersive interaction and AI prominent. Avoid generic AI stock imagery, excessive gradients, and heavy 3D scenes that obstruct the content. The owner has requested an animated background: preserve the preview's restrained spatial motion, pause control, reduced-motion support, and suspension when the page is hidden. Preserve both supplied portrait choices; pixelisation of the second photograph remains optional.
 
 Design a memorable opening composition with my name, verified role, a short plain-language research statement, portrait, and clear links to research, publications, and contact. Give selected research substantial imagery and short explanations. Use a compact, readable bibliography for the complete publication list. Make mobile layouts as deliberate as desktop layouts. Support keyboard navigation, visible focus, sufficient contrast, reduced motion, and touch-friendly controls. Add a polished dark theme if it fits the design without delaying the core features.
+
+Add a compact monochrome icon strip for the seven verified affiliations and profiles in [PROFILE-LINKS.md](PROFILE-LINKS.md): VR Lab, BhamXR, Google Scholar, LinkedIn, ResearchGate, ORCID and GitHub. Preserve accessible names, visible labels, keyboard focus and locally served icons. Do not invent destinations for unverified accounts or copy Di Luca's identifiers.
 
 ## 3. Information architecture
 
@@ -69,6 +73,14 @@ Implement Dimensions citation badges for verified DOIs using the [official embed
 Preserve existing authentic research images with source provenance. The preview uses the existing PaintBranch project illustration (from 2025) for the related 2026 journal work; do not claim that image was extracted from the journal article. Future records should publish even if no image is available. Automatically obtain a thumbnail only from a verified, permitted source with a reliable association to the work; otherwise use a restrained typographic treatment. Adding every paper must not depend on manually supplying an image.
 
 Google Scholar's own [automatic profile updates](https://scholar.google.com/intl/en/scholar/citations.html) apply to Scholar. They do not update this website. Describe the production promise precisely: the website discovers papers once they are available from an enabled, identity-verified source and a refresh succeeds. Indexing delays and coverage differences can occur. Preserve the Google Scholar profile link for visitors.
+
+## 3b. Research ideas map from Coggle
+
+The owner requests the diagram at https://coggle.it/diagram/WKrsJoOwHAABFf4w/t/research-ideas as an illustrated view of what they intend to study. Add it to Research under a heading such as “What I am exploring next”, with a readable full-size image link and a link to the original map. Describe its contents as research ideas, not completed projects or confirmed results. Preserve the actual diagram; do not fabricate its branches or recreate it from guessed interests.
+
+Acquisition is pending: on 13 September 2026, browser control failed during Windows sandbox initialization and the supplied URL returned HTTP 404 without authentication. No diagram image has been retrieved or inserted. Obtain an owner-exported PNG/PDF or a valid Coggle view/embed link before implementing the visual. Do not insert a broken iframe or assume the owner-view URL is accessible to visitors.
+
+If the owner supplies embed code, consider Coggle's supported pan-and-zoom embed for updates from the original diagram, with a static image fallback where available. Verify signed-out visitor access and narrow-screen usability. An exported image is a snapshot and does not update automatically. Official instructions: https://coggle.help/article/67-embed-a-coggle-diagram-in-a-webpage and https://coggle.help/article/15-saving-a-diagram .
 
 ## 4. Framework and hosting
 

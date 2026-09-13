@@ -7,6 +7,65 @@
   let paused = reduced.matches, width = 0, height = 0, frame = 0, previous = 0, phase = 0;
   let pointer = {x:0, y:0}, eased = {x:0, y:0};
   let palette = [];
+  const galaxy = document.createElement('canvas');
+  galaxy.width = galaxy.height = 640;
+  const galaxyContext = galaxy.getContext('2d');
+  // A decorative Andromeda-inspired spiral, not an astronomical simulation.
+  // Cache the stars once per theme; each animation frame only rotates the texture.
+  function buildGalaxy(dark) {
+    if (!galaxyContext) return;
+    const g = galaxyContext, centre = 320;
+    g.clearRect(0, 0, 640, 640);
+    let seed = 31;
+    const random = () => { seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0; return seed / 4294967296; };
+    const halo = g.createRadialGradient(centre, centre, 8, centre, centre, 302);
+    halo.addColorStop(0, dark ? 'rgba(244,211,162,.55)' : 'rgba(180,133,79,.38)');
+    halo.addColorStop(.22, dark ? 'rgba(166,177,201,.22)' : 'rgba(81,139,157,.2)');
+    halo.addColorStop(.7, dark ? 'rgba(113,160,203,.1)' : 'rgba(57,117,136,.08)');
+    halo.addColorStop(1, 'rgba(90,150,180,0)');
+    g.fillStyle = halo; g.fillRect(0, 0, 640, 640);
+    for (let i = 0; i < 2600; i++) {
+      const r = 292 * Math.pow(random(), .76);
+      const arm = i % 2 * Math.PI;
+      const angle = arm + r * .026 + (random() - .5) * (i % 5 === 0 ? 6.28 : .85);
+      const x = centre + Math.cos(angle) * r, y = centre + Math.sin(angle) * r;
+      const alpha = (.2 + random() * .65) * (1 - Math.pow(r / 305, 3));
+      const warm = r < 70 || i % 7 === 0;
+      g.fillStyle = 'rgba(' + (dark ? (warm ? '250,220,177' : '176,213,239') : (warm ? '151,104,59' : '44,110,133')) + ',' + alpha + ')';
+      const size = .55 + random() * 1.8;
+      g.fillRect(x, y, size, size);
+    }
+    // Narrow dust lanes follow the two spiral arms.
+    for (let arm = 0; arm < 2; arm++) {
+      g.beginPath();
+      for (let r = 38; r < 275; r += 2) {
+        const a = arm * Math.PI + r * .026 + .24;
+        const x = centre + Math.cos(a) * r, y = centre + Math.sin(a) * r;
+        if (r === 38) g.moveTo(x, y); else g.lineTo(x, y);
+      }
+      g.strokeStyle = dark ? 'rgba(24,39,51,.28)' : 'rgba(42,79,85,.16)';
+      g.lineWidth = 5; g.stroke();
+    }
+    const core = g.createRadialGradient(centre, centre, 0, centre, centre, 77);
+    core.addColorStop(0, dark ? 'rgba(255,244,213,.98)' : 'rgba(198,146,80,.85)');
+    core.addColorStop(.2, dark ? 'rgba(254,225,178,.8)' : 'rgba(198,153,98,.5)');
+    core.addColorStop(1, 'rgba(210,175,130,0)');
+    g.fillStyle = core; g.fillRect(centre - 77, centre - 77, 154, 154);
+  }
+  function drawGalaxy() {
+    if (!galaxyContext) return;
+    const small = width < 650;
+    const radius = small ? 70 : 115;
+    const x = small ? 78 : 132, y = height - (small ? 70 : 92);
+    context.save();
+    context.translate(x, y);
+    context.rotate(-.38);
+    // Rotate in the galaxy's plane, then project its inclined disc.
+    context.scale(1, .4);
+    context.rotate(phase * .075);
+    context.drawImage(galaxy, -radius, -radius, radius * 2, radius * 2);
+    context.restore();
+  }
   const particles = Array.from({length:52}, (_, i) => ({
     x: ((i * 73 + 17) % 101) / 101,
     y: ((i * 47 + 9) % 97) / 97,
@@ -17,6 +76,7 @@
   function readTheme() {
     const dark = document.body.classList.contains('theme-dark');
     palette = dark ? ['167,203,188','132,187,211','204,159,127'] : ['40,103,94','87,151,178','170,124,89'];
+    buildGalaxy(dark);
   }
   function resize() {
     width = innerWidth; height = innerHeight;
@@ -63,6 +123,7 @@
       context.fillStyle='rgba('+palette[0]+',.13)';
       context.fillRect(Math.round(x),Math.round(y),2,2);
     }
+    drawGalaxy();
   }
   function tick(now) {
     frame=0;

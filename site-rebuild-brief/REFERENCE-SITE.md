@@ -24,7 +24,7 @@ Inspected 13 September 2026. Reference: https://massimilianodiluca.info/.
 | Individual publication pages | Required for production, with verified resources, related versions and BibTeX. Preview links to publishers/repositories instead. |
 | Media and impact | Omit until Daniele-specific evidence is available. Do not generate impact claims from citation numbers. |
 | Opportunities | Do not relabel 2025 recruitment announcements as open. Current openings need verified dates/status. |
-| Teaching and supervision | Preview migrates dated selected teaching and past student projects, with links to the legacy archives. |
+| Teaching and supervision | Preview leads with owner-confirmed current teaching of Intelligent Interactive Systems and Visualization at the University of Birmingham (confirmed 13 September 2026), followed by dated selected UCL teaching and past student projects, with links to the legacy archives. |
 | Experience | Preview adds UCL Research Associate history, the Microsoft internship and Max Planck research visit, preserving known date precision. |
 | Funding | Preview includes the documented Marie Curie doctoral support. OpenLab and Network+ internal funding details remain pending the requested Outlook verification. No private emails or guessed award details have been inserted. |
 | Awards | Preserve only independently verified Daniele awards during migration; no reference-owner awards copied. |

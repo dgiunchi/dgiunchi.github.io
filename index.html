@@ -60,7 +60,7 @@ function filterPapers(){const query=search.value.trim().toLocaleLowerCase();let 
 filterButtons.forEach(button=>button.addEventListener('click',()=>{topic=button.dataset.filter;filterButtons.forEach(b=>b.setAttribute('aria-pressed',String(b===button)));filterPapers()}));search.addEventListener('input',filterPapers);
 document.querySelector('.theme').addEventListener('click',event=>{const dark=document.body.classList.toggle('theme-dark');event.currentTarget.setAttribute('aria-label',dark?'Switch to light theme':'Switch to dark theme')});
 const menu=document.querySelector('.menu'),nav=document.querySelector('.nav');menu.addEventListener('click',()=>{const expanded=nav.classList.toggle('expanded');menu.setAttribute('aria-expanded',String(expanded))});document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('expanded');menu.setAttribute('aria-expanded','false')}));
-</script><script src="/assets/site/ambient.js?v=769ca5666b"></script><script>
+</script><script src="/assets/site/ambient.js?v=de6bdf780a"></script><script>
 document.querySelectorAll('.portrait-choice').forEach(button=>button.addEventListener('click',()=>{
   const portrait=document.querySelector('#hero-portrait');
   portrait.src=button.dataset.portrait;portrait.alt=button.dataset.alt;

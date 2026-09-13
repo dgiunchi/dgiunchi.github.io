@@ -139,14 +139,14 @@
     const mobile = width < 650;
     // Keep these small, in the outer margins, where the artwork stays visible.
     const bodies = [
-      {x: width - (mobile ? 48 : 87), y: mobile ? height - 145 : height * .73, size: mobile ? 96 : 166, speed: .16},
-      {x: width - (mobile ? 25 : 48), y: height * .23, size: mobile ? 72 : 110, speed: .12},
-      {x: mobile ? 26 : 54, y: height * .4, size: mobile ? 58 : 86, speed: .1}
+      {x: width - (mobile ? 48 : 87), y: mobile ? height - 145 : height * .73, size: mobile ? 70 : 116, speed: .12},
+      {x: width - (mobile ? 25 : 48), y: height * .23, size: mobile ? 50 : 78, speed: .1},
+      {x: mobile ? 26 : 54, y: height * .4, size: mobile ? 40 : 60, speed: .08}
     ];
     bodies.forEach((body, i) => {
       if (mobile && i === 2) return;
-      const x = body.x + Math.sin(phase * body.speed + i) * (mobile ? 5 : 12);
-      const y = body.y + Math.sin(phase * body.speed * .8 + i * 2) * 12;
+      const x = body.x + Math.sin(phase * body.speed + i) * (mobile ? 7 : 18);
+      const y = body.y + Math.sin(phase * body.speed * .8 + i * 2) * (mobile ? 12 : 20);
       context.save();
       context.globalAlpha = document.body.classList.contains('theme-dark') ? .84 : .65;
       context.drawImage(planets[i], x - body.size / 2, y - body.size / 2, body.size, body.size);

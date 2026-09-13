@@ -7,6 +7,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 import re
 import shutil
+import hashlib
 
 ROOT = Path(__file__).resolve().parent.parent
 PREVIEW = ROOT / "site-rebuild-brief" / "preview"
@@ -34,6 +35,11 @@ def build():
         return f'{attribute}="{target}"'
 
     html = re.sub(r'\b(href|src|data-portrait)="([^\"]+)"', local_path, html)
+    # Content versions prevent stale JS/CSS after a Pages deployment.
+    for asset in ASSETS.iterdir():
+        if asset.suffix in (".js", ".css"):
+            version = hashlib.sha256(asset.read_bytes()).hexdigest()[:10]
+            html = html.replace(f'"/assets/site/{asset.name}"', f'"/assets/site/{asset.name}?v={version}"')
     html, count = re.subn(r'<meta(?=[^>]*name="robots")[^>]*>', '', html)
     assert count == 1, "Expected the preview robots tag"
     html, count = re.subn(r'<div class="preview-note">.*?</div>', '', html)

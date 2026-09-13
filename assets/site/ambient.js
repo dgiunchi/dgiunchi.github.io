@@ -4,7 +4,23 @@
   const toggle = document.querySelector('.motion-toggle');
   if (!context) { canvas.hidden = true; toggle.hidden = true; return; }
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-  let paused = reduced.matches, width = 0, height = 0, frame = 0, previous = 0, phase = 0;
+  let motionChoice = new URLSearchParams(location.search).get('motion');
+  if (!['on', 'off'].includes(motionChoice)) {
+    try { motionChoice = localStorage.getItem('site-motion'); } catch { motionChoice = null; }
+  }
+  let paused = motionChoice === 'off' || (motionChoice !== 'on' && reduced.matches);
+  let width = 0, height = 0, frame = 0, previous = 0, phase = 0;
+  function rememberMotion() {
+    motionChoice = paused ? 'off' : 'on';
+    try { localStorage.setItem('site-motion', motionChoice); } catch { /* Storage is optional. */ }
+    // An explicit entry URL must not override a later click after a refresh.
+    const url = new URL(location.href);
+    if (url.searchParams.has('motion')) {
+      url.searchParams.delete('motion');
+      try { history.replaceState(null, '', url); } catch { /* Embedded previews may restrict history. */ }
+    }
+  }
+  if (['on', 'off'].includes(motionChoice)) rememberMotion();
   let pointer = {x:0, y:0}, eased = {x:0, y:0};
   let palette = [];
   const galaxy = document.createElement('canvas');
@@ -62,9 +78,80 @@
     context.rotate(-.38);
     // Rotate in the galaxy's plane, then project its inclined disc.
     context.scale(1, .4);
-    context.rotate(phase * .075);
+    context.rotate(phase * .12);
     context.drawImage(galaxy, -radius, -radius, radius * 2, radius * 2);
     context.restore();
+  }
+  // Procedural illustrative planets: cached spherical lighting, cloud bands,
+  // atmospheric rims and a layered ring system, with no external image requests.
+  function planetSprite(kind) {
+    const surface = document.createElement('canvas');
+    surface.width = surface.height = 192;
+    const sc = surface.getContext('2d');
+    if (!sc) return surface;
+    const pixels = sc.createImageData(192, 192);
+    for (let y = 0; y < 192; y++) for (let x = 0; x < 192; x++) {
+      const nx = (x - 95.5) / 94, ny = (y - 95.5) / 94;
+      const rr = nx * nx + ny * ny;
+      if (rr > 1) continue;
+      const nz = Math.sqrt(1 - rr);
+      const longitude = Math.atan2(nx, nz), latitude = Math.asin(ny);
+      const turbulence = Math.sin(longitude * 11 + Math.sin(latitude * 19) * .8)
+        + .4 * Math.sin(longitude * 31 - latitude * 23)
+        + .2 * Math.sin(longitude * 61 + latitude * 47);
+      const band = Math.sin(latitude * (kind === 0 ? 37 : 18) + turbulence * .45);
+      const clouds = Math.pow(Math.max(0, Math.sin(latitude * 25 + turbulence * 1.7)), 9);
+      const base = kind === 0 ? [192, 151, 100] : kind === 1 ? [48, 127, 170] : [95, 164, 170];
+      const light = .16 + .84 * Math.max(0, nx * -.57 + ny * -.46 + nz * .68);
+      const rim = Math.pow(1 - nz, 5) * Math.max(0, -.5 * nx - .4 * ny + .55);
+      const at = (y * 192 + x) * 4;
+      for (let c = 0; c < 3; c++) pixels.data[at + c] = Math.min(255,
+        (base[c] + band * (kind === 0 ? 19 : 12) + clouds * (kind === 0 ? 24 : 64)) * light
+        + rim * (c === 0 ? 38 : 85));
+      pixels.data[at + 3] = Math.min(255, (1 - Math.sqrt(rr)) * 94 * 255);
+    }
+    sc.putImageData(pixels, 0, 0);
+    const sprite = document.createElement('canvas');
+    sprite.width = sprite.height = 400;
+    const g = sprite.getContext('2d');
+    if (!g) return surface;
+    g.translate(200, 200); g.rotate(kind === 0 ? -.38 : .22);
+    const glow = g.createRadialGradient(0, 0, 85, 0, 0, 110);
+    glow.addColorStop(0, kind === 0 ? 'rgba(224,190,128,.2)' : 'rgba(118,203,236,.3)');
+    glow.addColorStop(1, 'rgba(100,190,220,0)');
+    g.fillStyle = glow; g.fillRect(-115, -115, 230, 230);
+    function rings(front) {
+      for (let ring = 0; ring < 18; ring++) {
+        if (ring === 11 || ring === 12) continue;
+        const r = 125 + ring * 3.2;
+        g.beginPath(); g.ellipse(0, 0, r, r * .32, 0, front ? 0 : Math.PI, front ? Math.PI : Math.PI * 2);
+        g.strokeStyle = 'rgba(' + (ring % 3 === 0 ? '131,111,82' : '207,182,137') + ',' + (front ? .82 : .5) + ')';
+        g.lineWidth = 2.6; g.stroke();
+      }
+    }
+    if (kind === 0) rings(false);
+    g.drawImage(surface, -96, -96);
+    if (kind === 0) rings(true);
+    return sprite;
+  }
+  const planets = [planetSprite(0), planetSprite(1), planetSprite(2)];
+  function drawPlanets() {
+    const mobile = width < 650;
+    // Keep these small, in the outer margins, where the artwork stays visible.
+    const bodies = [
+      {x: width - (mobile ? 48 : 87), y: mobile ? height - 145 : height * .73, size: mobile ? 96 : 166, speed: .16},
+      {x: width - (mobile ? 25 : 48), y: height * .23, size: mobile ? 72 : 110, speed: .12},
+      {x: mobile ? 26 : 54, y: height * .4, size: mobile ? 58 : 86, speed: .1}
+    ];
+    bodies.forEach((body, i) => {
+      if (mobile && i === 2) return;
+      const x = body.x + Math.sin(phase * body.speed + i) * (mobile ? 5 : 12);
+      const y = body.y + Math.sin(phase * body.speed * .8 + i * 2) * 12;
+      context.save();
+      context.globalAlpha = document.body.classList.contains('theme-dark') ? .84 : .65;
+      context.drawImage(planets[i], x - body.size / 2, y - body.size / 2, body.size, body.size);
+      context.restore();
+    });
   }
   const particles = Array.from({length:52}, (_, i) => ({
     x: ((i * 73 + 17) % 101) / 101,
@@ -103,7 +190,7 @@
         const px=cx+x*Math.cos(rotation)-y*Math.sin(rotation);
         const py=cy+x*Math.sin(rotation)+y*Math.cos(rotation);
         context.fillStyle='rgba('+palette[(ring+j)%3]+',.32)';
-        context.fillRect(Math.round(px/2)*2,Math.round(py/2)*2,ring===0?5:3,ring===0?5:3);
+        context.beginPath(); context.arc(px,py,ring===0?2:1.3,0,Math.PI*2); context.fill();
       }
     }
     const limit = width<650 ? 24 : particles.length;
@@ -124,6 +211,7 @@
       context.fillRect(Math.round(x),Math.round(y),2,2);
     }
     drawGalaxy();
+    drawPlanets();
   }
   function tick(now) {
     frame=0;
@@ -140,14 +228,14 @@
     cancelAnimationFrame(frame); frame=0; previous=performance.now();
     toggle.setAttribute('aria-pressed', String(paused));
     toggle.setAttribute('aria-label', paused ? 'Play background animation' : 'Pause background animation');
-    toggle.querySelector('.motion-label').textContent=paused?'Play motion':'Pause motion';
+    toggle.querySelector('.motion-label').textContent=paused?'Motion off · Play':'Motion on · Pause';
     toggle.querySelector('.motion-icon').textContent=paused?'▷':'Ⅱ';
     canvas.dataset.motion=paused?'paused':document.hidden?'suspended':'running';
     if(!paused&&!document.hidden) frame=requestAnimationFrame(tick);
     else draw();
   }
-  toggle.addEventListener('click',()=>{paused=!paused;sync()});
-  reduced.addEventListener('change',()=>{paused=reduced.matches;pointer={x:0,y:0};eased={x:0,y:0};sync()});
+  toggle.addEventListener('click',()=>{paused=!paused;rememberMotion();sync()});
+  reduced.addEventListener('change',()=>{if (!['on','off'].includes(motionChoice)) paused=reduced.matches;pointer={x:0,y:0};eased={x:0,y:0};sync()});
   document.addEventListener('visibilitychange',sync);
   window.addEventListener('resize',resize,{passive:true});
   window.addEventListener('pointermove',event=>{

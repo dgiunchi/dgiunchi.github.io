@@ -34,6 +34,8 @@ Use official current sources for current employment and contact details, publish
 
 Owner-confirmed teaching update (13 September 2026): I currently teach Intelligent Interactive Systems and Visualization at the University of Birmingham. Put this first in the teaching section, ahead of dated UCL history. Preserve the supplied wording; do not infer a start year, module code, leadership role, or course description.
 
+Owner-confirmed biography update (13 September 2026): describe me as Assistant Professor in HCI at the University of Birmingham and Honorary Lecturer at UCL. State that I work in the Birmingham VR Lab with Prof. Massimiliano Di Luca (https://massimilianodiluca.info/) and Prof. Eyal Ofek (https://eyalofek.org/). Use the fuller biography preserved in legacy.html, including UCL research history, PhD supervisors, Marie Curie support, Microsoft internship, Max Planck research visit, astronomy and industry experience. Show Birmingham and UCL logos for the current affiliations, and Bologna, UCL and Sapienza logos alongside the matching qualifications. Institution artwork and sources are in preview/icons/SOURCES.md. Do not infer additional roles or alter qualification dates.
+
 ## 2. Visual direction
 
 Create an elegant research portfolio with the character of an interactive graphics researcher. Aim for excellent typography, generous whitespace, strong hierarchy, and engaging research imagery. Make the experience warm and personal while retaining academic credibility.

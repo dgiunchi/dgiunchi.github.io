@@ -135,21 +135,33 @@
     return sprite;
   }
   const planets = [planetSprite(0), planetSprite(1), planetSprite(2)];
+  // The orbit paths and planets share exactly the same geometry.
+  function planetOrbit(index) {
+    const mobile = width < 650;
+    const radius = Math.min(width * (mobile ? .32 : .24), height * .29, 320);
+    const gap = mobile ? 12 : 28;
+    const tilt = -.52;
+    const outer = radius + 2 * gap;
+    const reach = outer * Math.hypot(Math.cos(tilt), .62 * Math.sin(tilt));
+    const margin = mobile ? 30 : 48;
+    const cx = Math.min(width - reach - margin, Math.max(reach + margin, width * (mobile ? .54 : .74)));
+    return {cx, cy: height * .53, rx: radius + index * gap,
+      ry: (radius + index * gap) * .62, tilt};
+  }
   function drawPlanets() {
     const mobile = width < 650;
-    // Keep these small, in the outer margins, where the artwork stays visible.
-    const bodies = [
-      {x: width - (mobile ? 48 : 87), y: mobile ? height - 145 : height * .73, size: mobile ? 70 : 116, speed: .12},
-      {x: width - (mobile ? 25 : 48), y: height * .23, size: mobile ? 50 : 78, speed: .1},
-      {x: mobile ? 26 : 54, y: height * .4, size: mobile ? 40 : 60, speed: .08}
-    ];
-    bodies.forEach((body, i) => {
-      if (mobile && i === 2) return;
-      const x = body.x + Math.sin(phase * body.speed + i) * (mobile ? 7 : 18);
-      const y = body.y + Math.sin(phase * body.speed * .8 + i * 2) * (mobile ? 12 : 20);
+    const sizes = mobile ? [50, 36, 28] : [82, 56, 44];
+    const periods = [120, 160, 210];
+    const starts = [.25, 2.85, 1.3];
+    planets.forEach((planet, i) => {
+      const orbit = planetOrbit(i);
+      const angle = starts[i] + phase * Math.PI * 2 / periods[i];
+      const px = orbit.rx * Math.cos(angle), py = orbit.ry * Math.sin(angle);
+      const x = orbit.cx + px * Math.cos(orbit.tilt) - py * Math.sin(orbit.tilt);
+      const y = orbit.cy + px * Math.sin(orbit.tilt) + py * Math.cos(orbit.tilt);
       context.save();
-      context.globalAlpha = document.body.classList.contains('theme-dark') ? .84 : .65;
-      context.drawImage(planets[i], x - body.size / 2, y - body.size / 2, body.size, body.size);
+      context.globalAlpha = mobile ? .55 : document.body.classList.contains('theme-dark') ? .84 : .65;
+      context.drawImage(planet, x - sizes[i] / 2, y - sizes[i] / 2, sizes[i], sizes[i]);
       context.restore();
     });
   }
@@ -174,24 +186,14 @@
   }
   function draw() {
     context.clearRect(0,0,width,height);
-    // Keep marks near the edges subtle enough to preserve reading contrast.
-    const cx=width*.80+eased.x*12, cy=height*.43+eased.y*10;
-    const radius=Math.min(width*.32,440);
+    // Quiet elliptical tracks make the slow orbital movement visible.
     context.lineWidth=1;
     for(let ring=0;ring<3;ring++){
-      context.strokeStyle='rgba('+palette[ring%2]+','+(ring===0?.16:.10)+')';
+      const orbit = planetOrbit(ring);
+      context.strokeStyle='rgba('+palette[ring%2]+','+(ring===0?.13:.085)+')';
       context.beginPath();
-      context.ellipse(cx,cy,radius+ring*42,(radius+ring*42)*.62, -.52+phase*.018,0,Math.PI*2);
+      context.ellipse(orbit.cx,orbit.cy,orbit.rx,orbit.ry,orbit.tilt,0,Math.PI*2);
       context.stroke();
-      for(let j=0;j<5;j++){
-        const angle=phase*(.08+ring*.018)+j*Math.PI*2/5+ring;
-        const x=(radius+ring*42)*Math.cos(angle), y=(radius+ring*42)*.62*Math.sin(angle);
-        const rotation=-.52+phase*.018;
-        const px=cx+x*Math.cos(rotation)-y*Math.sin(rotation);
-        const py=cy+x*Math.sin(rotation)+y*Math.cos(rotation);
-        context.fillStyle='rgba('+palette[(ring+j)%3]+',.32)';
-        context.beginPath(); context.arc(px,py,ring===0?2:1.3,0,Math.PI*2); context.fill();
-      }
     }
     const limit = width<650 ? 24 : particles.length;
     for(let i=0;i<limit;i++){

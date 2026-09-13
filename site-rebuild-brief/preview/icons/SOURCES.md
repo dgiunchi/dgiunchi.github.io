@@ -18,3 +18,8 @@ Added 13 September 2026 to identify education and academic appointments; artwork
 - University of Birmingham: existing owner-site asset images/logo-uob.jpg, reused for the current academic affiliation.
 
 Institutional marks remain the property of their respective universities; these links identify qualifications and affiliations, not university ownership of this personal website.
+
+## Owner-supplied teaching marks
+
+- birmingham-crest.png: supplied by the owner on 13 September 2026; unchanged original, shown small beside the University of Birmingham teaching heading.
+- ucl-supplied.png: supplied by the owner on 13 September 2026; unchanged original replaces the earlier UCL mark in teaching, education and affiliations. Its transparent lettering is displayed against a white surface, preserving the supplied dark banner and white portico as a legible negative mark.

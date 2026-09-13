@@ -4,7 +4,7 @@
 
 Build a distinctive, accessible academic website whose publications and publication-driven activity update automatically. The detailed product brief is [site-rebuild-brief/REBUILD-PROMPT.md](site-rebuild-brief/REBUILD-PROMPT.md). Follow the user's active request: a request to edit the brief or tooling does not itself start a website rewrite or production deployment.
 
-The starting site is handwritten `index.html` with assets in `images/`, `store/`, `publications/`, `projects/`, and `talks/`. Astro + TypeScript is the preferred rebuild stack, not an already installed dependency. Inspect actual files and package scripts before running commands. Keep this description current after migration.
+The public homepage is generated `index.html`, with local presentation assets in `assets/site/`. Edit the design source in `site-rebuild-brief/preview/`, then run `python tools/build_homepage.py` to update the public homepage and assets. This standard-library build keeps the preview banner and noindex directive out of production and fixes root-relative paths. The previous site and full historical bibliography are preserved in `legacy.html`; existing `images/`, `store/`, `publications/`, `projects/`, and `talks/` URLs remain. Preview locally with `python -m http.server 8765 --bind 127.0.0.1` from the repository root. GitHub Pages deploys `main` from `/`. Astro + TypeScript and automatic scholarly imports remain future work; there is no publication scheduler yet.
 
 ## Project skills
 

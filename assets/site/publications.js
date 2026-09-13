@@ -1,0 +1,2 @@
+document.querySelectorAll('[data-topic-link]').forEach(link=>link.addEventListener('click',()=>{document.querySelector('#paper-search').value='';document.querySelector('[data-filter="'+link.dataset.topicLink+'"]').click();}));
+document.querySelectorAll('.copy-citation').forEach(button=>button.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(button.parentElement.querySelector('.citation-text').textContent);button.textContent='Copied';}catch{button.textContent='Select and copy the citation above';}}));

@@ -68,3 +68,11 @@ Agent tool access is separate from production automation. The future unattended 
 [AGENTS.md](../AGENTS.md) provides project conventions. [SKILLS.md](../SKILLS.md) indexes the three project skills in `.agents/skills/`, the repository discovery location described by [OpenAI's skills documentation](https://learn.chatgpt.com/docs/build-skills).
 
 All three skill files passed the installed Skill Creator `quick_validate.py` check. Their instructions distinguish current capabilities from planned implementation, keep source ingestion independent of design tooling, and preserve the user's active task scope.
+
+## Homepage publication
+
+GitHub Pages serves the root of `main` (verified with `gh api repos/dgiunchi/dgiunchi.github.io/pages`). The approved preview is now promoted into root `index.html`; its assets are copied into `assets/site/`. The old website remains at `legacy.html`, including the historical bibliography and existing downloads.
+
+Run `python tools/build_homepage.py` after editing the preview. It uses only the Python standard library and removes preview-only metadata while rewriting asset paths. Run `python -m http.server 8765 --bind 127.0.0.1` from the repository root for local checks. Commit both the source changes and generated homepage/assets, then push `main` to trigger the existing Pages deployment. Verify the deployment run and public homepage, rather than treating a successful push as proof that the page is live.
+
+This publishes the current design with a static selected-publication list and live citation widgets. It does not implement the planned scholarly importer or scheduler. The Coggle map remains pending access.

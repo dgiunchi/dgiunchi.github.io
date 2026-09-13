@@ -150,8 +150,8 @@
   }
   function drawPlanets() {
     const mobile = width < 650;
-    const sizes = mobile ? [50, 36, 28] : [82, 56, 44];
-    const periods = [120, 160, 210];
+    const sizes = mobile ? [34, 24, 20] : [54, 38, 30];
+    const periods = [240, 320, 420];
     const starts = [.25, 2.85, 1.3];
     planets.forEach((planet, i) => {
       const orbit = planetOrbit(i);

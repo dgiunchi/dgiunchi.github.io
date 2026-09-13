@@ -139,7 +139,7 @@ Verify these acceptance scenarios with meaningful automated tests for the import
 - An API outage, empty response, malformed record, or partial import leaves the published bibliography intact and exposes the actual sync failure.
 - Editorial corrections survive subsequent imports, and timestamps/slugs remain stable.
 - The historical backfill does not masquerade as today's news.
-- Phone and desktop layouts, keyboard navigation, reduced motion, filters, download links, and old URLs work.
+- Phone and desktop layouts, keyboard navigation, reduced motion, filters, download links, and old URLs work. Support widths down to 320px without horizontal overflow, use 44px primary touch controls and 16px phone search inputs, and give publication text a full-width layout on small phones.
 - The production build passes; dependency choices, external failures, and untested integrations are reported honestly.
 
 Deliver the complete implementation, imported initial data, automation and scheduler configuration, a local preview, screenshots at mobile and desktop widths, and a concise README explaining setup, source precedence, refresh behaviour, optional corrections, secrets, costs, and failure recovery. Show the initial import report with source counts, duplicates merged, ambiguous candidates, and coverage gaps; do not equate one provider's record count with a definitive publication total.

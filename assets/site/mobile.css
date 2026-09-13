@@ -1,0 +1,32 @@
+/* Phone layouts and touch controls; no device detection is needed. */
+@media (max-width:650px){
+  .menu,.theme,.chip,.portrait-choice,.copy-citation,.motion-toggle{min-height:44px}
+  .theme{width:44px;flex-shrink:0}
+  .hero-actions{flex-wrap:wrap;gap:12px 24px}
+  .hero-actions a,.paper-actions>a,.citation-details summary,.topic-links a,.socials a{min-height:44px;display:inline-flex;align-items:center}
+  .search input{font-size:16px;min-height:44px;min-width:0}
+  .search{flex:1 1 100%}
+  .socials{flex-wrap:wrap;gap:6px 22px}
+  .nav.expanded{max-height:calc(100svh - 12px);overflow-y:auto}
+  .nav.expanded .navlink,.nav.expanded .contact-nav{min-height:44px}
+  .motion-toggle{right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom))}
+  .footer{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
+  .resource-card>div,.record-list li>div,.institution-heading>span{min-width:0;overflow-wrap:break-word}
+}
+@media (max-width:480px){
+  .hero h1{font-size:clamp(39px,11.7vw,49px)}
+  .section-heading{flex-wrap:wrap;gap:12px}
+  .section-heading>a{padding-top:0;min-height:44px;display:inline-flex;align-items:center}
+  .publication{grid-template-columns:minmax(0,1fr)}
+  .publication-body{grid-column:1;grid-row:3}
+  .publication h3{font-size:16px}
+  .publication p{font-size:12px}
+  .paper-thumbnail{grid-column:1;grid-row:2;width:150px;min-height:96px}
+  .paper-thumbnail img{height:86px}
+  .profile-icon{min-width:44px}
+}
+@media (max-width:360px){
+  .nav .brand{font-size:13px;gap:6px}
+  .nav .brand-symbol{width:24px;height:24px}
+  .nav{gap:6px}
+}

@@ -16,7 +16,7 @@ ASSETS = ROOT / "assets" / "site"
 
 def build():
     ASSETS.mkdir(parents=True, exist_ok=True)
-    for name in ("ambient.css", "ambient.js", "publications.css", "publications.js", "profiles.css", "portrait-window-original.png"):
+    for name in ("ambient.css", "ambient.js", "publications.css", "publications.js", "profiles.css", "mobile.css", "portrait-window-original.png"):
         shutil.copy2(PREVIEW / name, ASSETS / name)
     shutil.copytree(PREVIEW / "icons", ASSETS / "icons", dirs_exist_ok=True)
     shutil.copy2(ROOT / "site-rebuild-brief" / "portrait.png", ASSETS / "portrait-pixel.png")

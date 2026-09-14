@@ -147,3 +147,5 @@ Deliver the complete implementation, imported initial data, automation and sched
 Work through implementation and verification autonomously. Make sensible design decisions rather than asking me to choose every detail. Prepare a concrete preview before requesting any permission needed for production publication or account provisioning. Clearly distinguish tested local automation from a schedule that is actually provisioned and running.
 
 Success means a visually memorable academic website whose bibliography and publication-driven updates continue to maintain themselves after one-time setup, while accurately representing my research and studies.
+
+Teaching correction confirmed by the owner on 14 September 2026: add Visualization at the University of Birmingham for 2025/2026, Term 2, alongside the existing current teaching entry.

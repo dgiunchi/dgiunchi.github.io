@@ -14,3 +14,5 @@
 .thesis-grid li{grid-template-columns:64px minmax(0,1fr);gap:16px}
 .supervision-section .record-list strong{font-size:14px;line-height:1.6}
 @media(max-width:650px){.thesis-grid{grid-template-columns:minmax(0,1fr)}.thesis-grid li{grid-template-columns:64px minmax(0,1fr);gap:12px}}
+
+.teaching-term{font-size:10px;color:var(--accent);padding-top:2px}

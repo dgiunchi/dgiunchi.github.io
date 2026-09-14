@@ -6,3 +6,11 @@
 @media(max-width:900px){.nav{gap:14px}.publication{grid-template-columns:40px minmax(0,1fr) 140px;gap:15px}.paper-thumbnail{width:140px;min-height:106px}.paper-thumbnail img{height:96px}.academic-grid{gap:30px}.resource-card{gap:14px}.resource-card img{width:85px}}
 @media(max-width:650px){.publication{grid-template-columns:1fr 100px;gap:10px 16px}.publication>.year{grid-column:1/-1;padding:0;font-size:11px}.publication-body{grid-column:1;grid-row:2}.publication h3{font-size:14px}.publication p{font-size:11px}.paper-thumbnail{grid-column:2;grid-row:2;width:100px;min-height:82px;padding:5px}.paper-thumbnail img{height:72px}.paper-type small{font-size:7px;letter-spacing:.6px}.paper-type span{font-size:25px}.paper-actions{gap:10px}.paper-metrics{flex-wrap:wrap}.resource-grid,.academic-grid{grid-template-columns:1fr;gap:25px}.resource-card img{width:100px}.record-list li{grid-template-columns:80px 1fr;gap:16px}.topic-links{gap:5px;margin-bottom:24px}.topic-links a{margin-right:10px}.topic-links span{margin-left:10px}}
 @media(max-width:370px){.publication{grid-template-columns:1fr}.publication-body{grid-column:1;grid-row:3}.paper-thumbnail{grid-column:1;grid-row:2;width:130px}}
+
+/* Thesis groups stay distinct from publications and taught modules. */
+.supervision-section{border-top:1px solid var(--line)}
+.thesis-group-title{font-family:var(--serif);font-size:25px;font-weight:400;margin:0 0 8px}
+.thesis-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:48px;margin-bottom:36px}
+.thesis-grid li{grid-template-columns:64px minmax(0,1fr);gap:16px}
+.supervision-section .record-list strong{font-size:14px;line-height:1.6}
+@media(max-width:650px){.thesis-grid{grid-template-columns:minmax(0,1fr)}.thesis-grid li{grid-template-columns:64px minmax(0,1fr);gap:12px}}

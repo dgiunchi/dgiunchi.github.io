@@ -149,3 +149,5 @@ Work through implementation and verification autonomously. Make sensible design 
 Success means a visually memorable academic website whose bibliography and publication-driven updates continue to maintain themselves after one-time setup, while accurately representing my research and studies.
 
 Teaching correction confirmed by the owner on 14 September 2026: add Visualization at the University of Birmingham for 2025/2026, Term 2, alongside the existing current teaching entry.
+
+Teaching roles confirmed by the owner on 14 September 2026: UCL teaching was as a Teaching Assistant (TA). At the University of Birmingham, list Lecturer for teaching and Module Leader for Intelligent Interactive Systems. Treat Intelligent Interactive Systems and Visualization as separate modules; retain Visualization for 2025/2026, Term 2. These teaching roles do not replace the Assistant Professor appointment or Honorary Lecturer affiliation.
